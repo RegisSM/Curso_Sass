@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #EEE;
+    height: 100px;
+    ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    
+    }
+    li{
+        display: inline-block;
+        a{
+            display: block;
+            background-color: #Ccc;
+            padding: 10px;
+            text-decoration: none;
+            color:#000;
+        }
+    }
+   
+}

@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+$colorBg: green;
+$color: white;
+$bordaPX: 2px;
+header{
+    height: 150px;
+    background-color: $colorBg;
+    margin-bottom: 10px;
+    color: $color;
+}
+
+main{
+    height: 150px;
+    background-color: $colorBg;
+    color: $color;
+    margin-bottom: 10px;
+    border: $bordaPX solid black;
+}
+
+
+section{
+    height: 150px;
+    background-color: $colorBg;
+    color: $color;
+    margin-bottom: 10px;
+}
+footer{
+    height: 150px;
+    background-color: $colorBg;
+    color: $color;
+    margin-bottom: 10px;
+}

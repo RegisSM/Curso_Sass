@@ -1,0 +1,35 @@
+
+@import 'reset'; 
+
+/* o mixin => é uma função utilizada para que o transform funcione em todos os 
+tipos de navegador, como o  webkit,-moz, -ms, e dentre outros */
+
+@mixin girar($graus){
+    transform: rotate($graus);
+    -webkit-transform: rotate($graus);
+    -moz-transform: rotate($graus);
+    -ms-transform: rotate($graus);
+}
+nav {
+    background-color: #EEE;
+    ul{
+        margin: 0; 
+        width: 100%;
+        padding: 30px;
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        list-style: none;
+    }
+    li{
+        display: inline-block;
+        @include girar(-25deg); /* chama a função */
+    }
+    a{
+        display: block;
+        background-color: #ccc;
+        padding:5px 20px;
+        text-decoration: none;
+        color: #000;
+    }
+}

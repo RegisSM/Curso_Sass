@@ -1,0 +1,48 @@
+@import 'reset'; 
+nav {
+    background-color: #EEE;
+    ul{
+        margin: 0; 
+        width: 100%;
+        padding: 30px;
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        list-style: none;
+    }
+    li{
+        display: inline-block;
+    }
+    a{
+        display: block;
+        background-color: #ccc;
+        padding:5px 20px;
+        text-decoration: none;
+        color: #000;
+    }
+}
+
+%item{
+    background-color: #000;
+    height: 40px;
+    margin: 0 auto;
+    margin-bottom: 10px
+}
+$item-largura: 300px;
+
+.item{
+    @extend %item;
+    width: $item-largura;
+}
+.item-duplo{
+    @extend %item;
+    width: $item-largura *2;
+}
+.item-metade{
+    @extend %item;
+    width: $item-largura / 2; //ira pegar a metade do primeiro item, o qual foi informado 300px
+}
+.item-triplo{
+    @extend %item;
+    width: $item-largura*3;
+}

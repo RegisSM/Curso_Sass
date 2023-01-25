@@ -1,0 +1,42 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: arial;
+  font-size: 28px;
+  background-color: #999;
+}
+
+/* o mixin => é uma função utilizada para que o transform funcione em todos os 
+tipos de navegador, como o  webkit,-moz, -ms, e dentre outros */
+nav {
+  background-color: #EEE;
+}
+nav ul {
+  margin: 0;
+  width: 100%;
+  padding: 30px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  list-style: none;
+}
+nav li {
+  display: inline-block;
+  transform: rotate(-25deg);
+  -webkit-transform: rotate(-25deg);
+  -moz-transform: rotate(-25deg);
+  -ms-transform: rotate(-25deg);
+  /* chama a função */
+}
+nav a {
+  display: block;
+  background-color: #ccc;
+  padding: 5px 20px;
+  text-decoration: none;
+  color: #000;
+}/*# sourceMappingURL=style.css.map */

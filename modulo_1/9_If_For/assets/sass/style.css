@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: arial;
+  font-size: 28px;
+  background-color: #999;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+nav {
+  background-color: #EEE;
+}
+nav ul {
+  margin: 0;
+  width: 100%;
+  padding: 30px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  list-style: none;
+}
+nav li {
+  display: inline-block;
+}
+nav a {
+  display: block;
+  background-color: #ccc;
+  padding: 5px 20px;
+  text-decoration: none;
+  color: #000;
+}
+
+.item-10, .item-9, .item-8, .item-7, .item-6, .item-5, .item-4, .item-3, .item-2, .item-1 {
+  font-size: 14px;
+  border: 1px solid rgb(148, 85, 85);
+  padding: 10px;
+}
+
+.item-4, .item-3, .item-2, .item-1 {
+  font-weight: bold;
+}/*# sourceMappingURL=style.css.map */

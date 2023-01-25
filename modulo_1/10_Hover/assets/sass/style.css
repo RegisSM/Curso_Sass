@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: arial;
+  font-size: 28px;
+  background-color: #999;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+nav:hover a {
+  background-color: rgb(118, 121, 121);
+  color: #EEE;
+}
+
+nav {
+  background-color: #EEE;
+}
+nav:hover {
+  background: rgb(118, 121, 121);
+}
+nav ul {
+  margin: 0;
+  width: 100%;
+  padding: 30px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  list-style: none;
+}
+nav li {
+  display: inline-block;
+}
+nav a {
+  display: block;
+  background-color: rgb(241, 241, 241);
+  padding: 5px 20px;
+  box-shadow: 2px 1px 4px 0px rgb(20, 20, 20);
+  text-decoration: none;
+  color: #000;
+}
+nav a:hover {
+  background-color: rgb(145, 17, 17);
+  color: white;
+}
+
+.item-10, .item-9, .item-8, .item-7, .item-6, .item-5, .item-4, .item-3, .item-2, .item-1 {
+  font-size: 14px;
+  border: 1px solid rgb(148, 85, 85);
+  padding: 10px;
+}
+
+.item-4, .item-3, .item-2, .item-1 {
+  font-weight: bold;
+}/*# sourceMappingURL=style.css.map */

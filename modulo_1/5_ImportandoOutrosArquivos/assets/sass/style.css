@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: arial;
+  font-size: 28px;
+  background-color: #999;
+}
+
+/* importando o arquivo reset */
+nav {
+  background-color: #EEE;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav li {
+  display: inline-block;
+}
+nav a {
+  display: block;
+  background-color: #ccc;
+  padding: 10px;
+  text-decoration: none;
+  color: #000;
+}/*# sourceMappingURL=style.css.map */

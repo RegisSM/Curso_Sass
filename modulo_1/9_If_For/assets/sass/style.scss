@@ -1,0 +1,39 @@
+@import 'reset';
+nav {
+    background-color: #EEE;
+    ul{
+        margin: 0; 
+        width: 100%;
+        padding: 30px;
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        list-style: none;
+    }
+    li{
+        display: inline-block;
+    }
+    a{
+        display: block;
+        background-color: #ccc;
+        padding:5px 20px;
+        text-decoration: none;
+        color: #000;
+    }
+}
+%item-padrao{
+    font-size: 14px;
+    border: 1px solid rgb(148, 85, 85);
+    padding: 10px;
+}
+%item-negrito{
+    font-weight: bold
+}
+@for $i from 1 through 10 {// de 1 ate ao 10 faça
+    .item-#{$i}{
+        @extend %item-padrao; // os 10 item pertencera a um grupo no .css
+        @if (($i<=4)){
+            @extend %item-negrito; // ira cria um grupo de item em negrito
+        }
+    }
+}

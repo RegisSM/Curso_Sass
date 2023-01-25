@@ -1,0 +1,50 @@
+@import 'reset'; 
+nav {
+    background-color: #EEE;
+    ul{
+        margin: 0; 
+        width: 100%;
+        padding: 30px;
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        list-style: none;
+    }
+    li{
+        display: inline-block;
+    }
+    a{
+        display: block;
+        background-color: #ccc;
+        padding:5px 20px;
+        text-decoration: none;
+        color: #000;
+    }
+}
+
+/* criando um grupo de propriedades */
+%fundamento-msg{
+    padding: 10px;
+    font-size: 24px;
+    border: 2px solid #ccc;
+    margin: auto;
+    max-width: 500px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.msg-info{
+    @extend %fundamento-msg;
+    border-color: blue;
+    color: white;
+}
+.msg-aviso{
+    @extend %fundamento-msg;
+    border-color: #ff0000;
+    color: white;
+}
+.msg-sucesso{
+    @extend %fundamento-msg;
+    border-color: #00FF00;
+    color: white;
+}

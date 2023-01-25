@@ -1,0 +1,58 @@
+@import 'reset';
+%fundo-de-menu{
+    background-color: rgb(118, 121, 121);
+    color: #EEE;
+}
+nav {
+    background-color: #EEE;
+   
+
+    &:hover {
+        background: rgb(118, 121, 121);
+    }
+    &:hover a{
+       @extend %fundo-de-menu;
+    }
+    ul{
+        margin: 0; 
+        width: 100%;
+        padding: 30px;
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        list-style: none;
+    }
+    li{
+        display: inline-block;
+    }
+    a{
+        display: block;
+        background-color: rgb(241, 241, 241);
+        padding:5px 20px;
+        box-shadow: 2px 1px 4px 0px rgb(20, 20, 20);
+        text-decoration: none;
+        color: #000;
+
+        // colocando hover ao passa o mouse
+        &:hover{
+            background-color: rgb(145, 17, 17);
+            color: white;
+        }
+    }
+}
+%item-padrao{
+    font-size: 14px;
+    border: 1px solid rgb(148, 85, 85);
+    padding: 10px;
+}
+%item-negrito{
+    font-weight: bold
+}
+@for $i from 1 through 10 {// de 1 ate ao 10 faça
+    .item-#{$i}{
+        @extend %item-padrao; // os 10 item pertencera a um grupo no .css
+        @if (($i<=4)){
+            @extend %item-negrito; // ira cria um grupo de item em negrito
+        }
+    }
+}

@@ -1,0 +1,56 @@
+@media screen {
+    .cor--Azul{--cor:#1e9bff;
+    }
+}
+.botaoNeo {
+    display: inline-grid;
+    color: #fff;
+    border: 0;
+    margin: 20px;
+    position: relative;
+    background-color: rgb(3, 2, 2);
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    padding: 10px 30px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.cor--Azul {
+    --cor: #1e9bff;
+}
+
+.botaoNeo i::before {
+    content: '';
+    position: absolute;
+    top: -3.5px;
+    left: 70%;
+    width: 15px;
+    height: 5px;
+    border: 2px solid #fff;
+    background-color: #030303;
+    transform: translateX(50%);
+    transition: 0.5s;
+}
+.botaoNeo i::after {
+    content: '';
+    position: absolute;
+    bottom: -3.5px;
+    left: 70%;
+    width: 15px;
+    height: 5px;
+    border: 2px solid #fff;
+    background-color: #030303;
+    transform: translateX(-90%);
+    transition: 0.5s;
+}
+.botaoNeo:hover{
+    flex-direction: column;
+    letter-spacing: 0.25em; /* largura do espaçamento horizontal */
+    background-color: var(--cor);
+    color: var(--cor);
+    box-shadow: 0 0 30px;
+    font-weight: bold;
+}
